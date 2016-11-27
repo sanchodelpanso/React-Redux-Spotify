@@ -1,0 +1,27 @@
+//=========================================================
+//  Buttons
+//---------------------------------------------------------
+
+.btn {
+  border: 1px solid #202020;
+  border-radius: 40px;
+  color: #202020;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  transform: translate(0, 0);
+  background: transparent;
+  text-decoration: none;
+
+  line-height: 35px;
+  height: 35px;
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: 12px;
+  font-weight: 300;
+
+  &.--inverse {
+    color: #FFF;
+    background-color: #202020;
+  }
+}

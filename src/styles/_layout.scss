@@ -1,0 +1,56 @@
+//=========================================================
+//  Layout
+//---------------------------------------------------------
+
+
+.page__angle__bg {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 150%;
+    height: 80%;
+    position: absolute;
+    background: linear-gradient(0deg, #FFF, #F7F7F7);
+    right: 0;
+    top: 0;
+    transform-origin: top right;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  &.--inverse__angle {
+    &:before {
+      left: 0;
+      transform-origin: top left;
+      transform: rotate(5deg);
+    }
+  }
+
+  &.--inverse__side {
+    &:before {
+      left: 0;
+      top: auto;
+      bottom: 0;
+      transform-origin: bottom left;
+      transform: rotate(-5deg);
+      background: linear-gradient(180deg, #FFF, #F7F7F7);
+    }
+  }
+}
+
+.page__grid__wrap {
+  margin-top: 40px;
+  min-height: 400px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  @media(max-width: 600px) {
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Biryani:200,300,400,700');
+
+body {
+  color: #202020;
+  background: #FFF;
+  font-family: 'Biryani', Helvetica Neue, Arial, sans-serif;;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+::selection {
+  background: #202020;
+  color: #FFF;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 200;
+  text-transform: uppercase;
+
+  &:before {
+    content: '/';
+    margin-right: 4px;
+  }
+}
+h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 300;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 200;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 200;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  &:before {
+    content: '/';
+    margin-right: 2px;
+  }
+}
+
+@media (max-width: 599px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 26px;
+    font-weight: 300;
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  h4 {
+    font-size: 20px;
+  }
+}
+
+input {
+  border: none;
+  border-color: #202020;
+  outline: none;
+}

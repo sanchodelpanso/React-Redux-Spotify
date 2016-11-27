@@ -1,0 +1,45 @@
+.search__header {
+    text-align: left;
+
+    .search__input {
+      position: relative;
+      margin-top: 60px;
+
+      @media (max-width: 599px) {
+        margin-top: 30px;
+      }
+
+      i {
+        position: absolute;
+        bottom: 8px;
+        margin: auto;
+        height: 28px;
+        font-size: 20px;
+        opacity: 0.5;
+      }
+
+      input {
+        width: 100%;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        padding: 5px 35px;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 200;
+        background: transparent;
+      }
+
+      .header__link {
+        margin-bottom: 30px;
+
+        @media (min-width: 600px) {
+          position: absolute;
+          right: 0;
+          bottom: 5px;
+          line-height: 30px;
+          height: 30px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+}
